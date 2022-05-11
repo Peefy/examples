@@ -25,9 +25,9 @@ SUCCESS  Creating Ingress/example-ingress
 Creating Ingress/example-ingress [4/4] ████████████████████████████████ 100% | 0s
 
 $ minikube service apple-service -n http-echo --url
-http://192.168.99.102:30206
+http://192.168.0.1:12345
 
-$ curl http://192.168.99.102:30206/apple                         
+$ curl http://192.168.0.1:12345/apple                         
 apple
 
 $ kusion destroy

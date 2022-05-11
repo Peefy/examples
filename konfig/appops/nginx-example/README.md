@@ -23,9 +23,9 @@ SUCCESS  Creating Deployment/nginx-exampledev
 Creating Deployment/nginx-exampledev [3/3] ████████████████████████████████ 100% | 0s
 
 $ minikube service nginx-example -n nginx-example --url
-http://192.168.99.102:30201
+http://192.168.0.1:12345
 
-$ curl -s http://192.168.99.102:30201 | grep '<title>'   # Or visit http://192.168.99.102:30201 in browser
+$ curl -s http://192.168.0.1:12345 | grep '<title>'   # Or visit http://192.168.0.1:12345 in browser
 <title>Welcome to nginx!</title>
 
 $ kusion destroy
