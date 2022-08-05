@@ -12,6 +12,7 @@ spec:
         command: [sh, -c]
         args:
         - cp -rf /kusion /custom-tools/kusion
+        - chown -R argocd:argocd /custom-tools/kusion
         volumeMounts:
         - mountPath: /custom-tools
           name: custom-tools
